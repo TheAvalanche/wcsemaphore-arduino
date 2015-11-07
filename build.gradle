@@ -1,0 +1,19 @@
+apply plugin: 'groovy'
+apply plugin: 'idea'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.0'
+    compile 'com.google.guava:guava:18.0'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'org.usb4java:usb4java:1.2.0'
+    compile 'org.usb4java:usb4java-javax:1.2.0'
+    compile 'org.rxtx:rxtx:2.1.7'
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    testRuntime 'cglib:cglib-nodep:3.1'
+    testRuntime 'org.objenesis:objenesis:2.1'
+}
