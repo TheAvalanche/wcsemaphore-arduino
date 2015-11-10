@@ -51,7 +51,7 @@ void checkButton2() {
   if (buttonState != lastButtonState2) {
     if (buttonState == HIGH) {
       state2 = !state2;
-      printToSerial("wc2-1", state2);
+      printToSerial("wc1-5", state2);
       digitalWrite(ledPin2, state2);
     }
     delay(50);
@@ -65,7 +65,7 @@ void checkButton3() {
   if (buttonState != lastButtonState3) {
     if (buttonState == HIGH) {
       state3 = !state3;
-      printToSerial("wc3-1", state3);
+      printToSerial("wc1-9", state3);
       digitalWrite(ledPin3, state3);
     }
     delay(50);
